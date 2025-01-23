@@ -41,8 +41,9 @@ public class ProductList {
 		ArrayList<Product> productsByCategory = new ArrayList<Product>();
 		
 		for (Product product : products) {
-			if (product.getCategory().contentEquals(category))
+			if ((product.getCategory().contentEquals(category)) && (product.isVisible()))
 				productsByCategory.add(product);
+
 		}
 		return productsByCategory;
 	}

@@ -9,6 +9,7 @@ public class Product {
 	private String currency;
 	private String category;
 	private PriceType priceType = PriceType.REGULAR;
+	private Boolean visible;
 
 	public String getName() {
 		return name;
@@ -77,6 +78,14 @@ public class Product {
 
 	public void setPriceType(PriceType priceType) {
 		this.priceType = priceType;
+	}
+
+	public Boolean isVisible() {
+		return visible;
+	}
+
+	public void setVisible(Boolean visible) {
+		this.visible = visible;
 	}
 
 	@Override
